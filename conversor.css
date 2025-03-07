@@ -1,0 +1,104 @@
+h1{text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+body{
+    background-image: url(imagens/backgroundCoins.jpg);
+    background-color: rgb(20, 20, 20);
+    font: normal 15pt arial;
+}
+
+section{
+    background-color: rgba(65, 65, 65, 0.479);
+    padding: 15px;
+    width: 550px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(rgba(0, 0, 0, 0.438));
+    color: rgb(255, 255, 255);
+    border: solid rgb(0, 0, 0);
+}
+
+footer{
+    margin-top: 60px;
+    padding: 12px;
+    background-color: rgba(65, 65, 65, 0.479);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#inicial{
+    width: 70px;
+}
+
+#conversora{
+    width: 70px;
+}
+
+#relogio {
+    font-size: 48px;
+    width: 550px;
+    margin: auto;
+    color: aliceblue;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(65, 65, 65, 0.479);
+    text-align: center;
+}
+
+#data{
+    font-size: 24px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.carrossel {
+    position: relative;
+    background: #aaaaaa;
+    border: solid #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrossel-item {
+    display: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.carrossel-item.active {
+    display: block;
+}
+
+/* Estilização das bolinhas */
+.carrossel-indicators {
+    margin-top: 15px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #333;
+}

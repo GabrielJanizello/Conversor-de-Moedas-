@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+    <link rel="stylesheet" href="conversor.css">
+</head>
+
+<body>
+    <header>
+        <div id="relogio">
+            <div id="relogioHoras"></div>
+            <div id="data"></div>
+        </div>    
+        
+        
+        <h1>Conversor de moedas</h1>
+    </header>
+    
+    <section>  
+        <div id="conversor">
+            Selecione uma moeda para conversão: <select name="select" id="inicial"></select><br>
+            <br>Valor: <input type="number" name="valor" id="valor" step="0.01" placeholder="Digite o valor"></input> use vírgula para separar os decimais!<br>
+            <br>Para: <select name="selectconv" id="conversora"></select><br>
+            <br><input type="button" value="Converter" onclick="converter()">
+        </div>
+
+        <div id="res">
+        
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="carrossel">
+            <div class="carrossel-item active">A maioria dos países adota um sistema de taxas de câmbio flutuantes, onde o valor das moedas varia de acordo com a oferta e a demanda no mercado.</div>
+            <div class="carrossel-item">A moeda mais valorizada do mundo atualmente é o Dinar do Kuwait.</div>
+            <div class="carrossel-item">Taxas de câmbio podem variar ao longo do dia devido a fatores econômicos.</div>
+        </div>
+        <div class="carrossel-indicators">
+            <span class="dot active" onclick="changeSlide(0)"></span>
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick="changeSlide(2)"></span>
+        </div>
+    </div>
+
+    <footer>&copy;2024, Gabriel Janizello. Todos os direitos reservados.</footer>
+
+    <script src="conversor.js"></script>
+</body>
+</html>
